@@ -17,6 +17,7 @@ export default defineConfig({
   },
   plugins: [vue()],
   test: {
+    clearMocks: false,
     environment: 'jsdom',
     include: ['src/**/*.test.ts'],
   },
