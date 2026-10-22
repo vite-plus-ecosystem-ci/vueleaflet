@@ -2,6 +2,7 @@ overrides:
   glob: 12.0.0
   js-cookie: 3.0.7
   ws: 8.20.1
+  vite@*: 'catalog:'
 minimumReleaseAgeExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
   - vite-plus
@@ -20,3 +21,11 @@ minimumReleaseAgeExclude:
   - yuku-parser
   - '@yuku-core/*'
   - '@yuku-toolchain/*'
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.6bc2d240a024170c08fbc831f0c201c162afd22e
+  vite-plus: 0.0.0-commit.6bc2d240a024170c08fbc831f0c201c162afd22e
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: '*'
